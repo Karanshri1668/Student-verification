@@ -31,7 +31,7 @@ async function loadRelayCSV(){
     try{
 
         const response =
-            await fetch("data/relay.csv");
+            await fetch("data/Relay.csv");
 
         const csv =
             await response.text();
