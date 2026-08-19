@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Debugging Dashboard</title>
+
+    <link rel="stylesheet" href="css/debugging.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Debugging Dashboard</h1>
+
+    <p>Participant Verification</p>
+
+</header>
+
+
+<!--====================================
+VERIFY SECTION
+=====================================-->
+
+<section class="verify-section">
+
+    <h2>Verify Participant</h2>
+
+    <div class="verify-box">
+
+        <input
+            type="text"
+            id="verifyInput"
+            placeholder="Enter Participant Unique ID"
+            autocomplete="off"
+        >
+
+        <button id="verifyBtn">
+
+            Verify
+
+        </button>
+
+    </div>
+
+    <div id="verifyResult"></div>
+
+</section>
+
+
+<!--====================================
+PARTICIPANTS
+=====================================-->
+
+<section class="participants-section">
+
+    <h2>Registered Participants</h2>
+
+    <div id="participants">
+
+        <!-- Participants will appear here -->
+
+    </div>
+
+</section>
+
+
+<script src="js/debugging.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+/*====================================
+
+GOOGLE FONT
+
+====================================*/
+
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'
+);
+
+
+/*====================================
+
+ROOT
+
+====================================*/
+
+:root{
+
+    --bg:#07070D;
+
+    --card:#141421;
+
+    --card-2:#1B1B2B;
+
+    --primary:#8258FB;
+
+    --secondary:#BB65FF;
+
+    --text:#FFFFFF;
+
+    --muted:#A8A8B5;
+
+    --border:#2A2A3A;
+
+}
+
+
+/*====================================
+
+RESET
+
+====================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+
+/*====================================
+
+HEADER
+
+====================================*/
+
+header{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+    padding:60px 0 30px;
+
+}
+
+
+header h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+}
+
+
+header p{
+
+    color:var(--muted);
+
+    margin-top:8px;
+
+}
+
+
+/*====================================
+
+VERIFY SECTION
+
+====================================*/
+
+.verify-section{
+
+    width:min(900px,90%);
+
+    margin:20px auto 50px;
+
+    padding:30px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+}
+
+
+.verify-section h2{
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+
+/*====================================
+
+VERIFY BOX
+
+====================================*/
+
+.verify-box{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+.verify-box input{
+
+    flex:1;
+
+    padding:15px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:var(--card-2);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+.verify-box input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:
+    0 0 0 3px rgba(130,88,251,.15);
+
+}
+
+
+.verify-box button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.verify-box button:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-2px);
+
+}
+
+
+/*====================================
+
+RESULT
+
+====================================*/
+
+#verifyResult{
+
+    margin-top:20px;
+
+}
+
+
+.result-success{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#102D19;
+
+    border:1px solid #2E9B4B;
+
+}
+
+
+.result-success h3{
+
+    color:#4DDB70;
+
+    margin-bottom:15px;
+
+}
+
+
+.result-success p{
+
+    margin:8px 0;
+
+    color:#E8E8E8;
+
+}
+
+
+.result-error{
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#321313;
+
+    border:1px solid #E13D3D;
+
+}
+
+
+.result-error h3{
+
+    color:#FF5B5B;
+
+    margin-bottom:10px;
+
+}
+
+
+.result-error p{
+
+    color:#E8E8E8;
+
+}
+
+
+/*====================================
+
+PARTICIPANTS SECTION
+
+====================================*/
+
+.participants-section{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+    padding-bottom:70px;
+
+}
+
+
+.participants-section > h2{
+
+    margin-bottom:25px;
+
+}
+
+
+/*====================================
+
+PARTICIPANTS
+
+====================================*/
+
+#participants{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:20px;
+
+}
+
+
+.participant-card{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:22px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+
+.participant-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    box-shadow:
+    0 15px 40px rgba(130,88,251,.15);
+
+}
+
+
+.participant-number{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:12px;
+
+    background:rgba(130,88,251,.15);
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+}
+
+
+.participant-info h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.participant-info p{
+
+    color:var(--muted);
+
+    margin:5px 0;
+
+    font-size:14px;
+
+}
+
+
+/*====================================
+
+ERROR
+
+====================================*/
+
+.error-box{
+
+    padding:25px;
+
+    background:#321313;
+
+    border:1px solid #E13D3D;
+
+    border-radius:15px;
+
+}
+
+
+/*====================================
+
+RESPONSIVE
+
+====================================*/
+
+@media(max-width:600px){
+
+    header h1{
+
+        font-size:2.2rem;
+
+    }
+
+
+    .verify-box{
+
+        flex-direction:column;
+
+    }
+
+
+    .verify-box button{
+
+        width:100%;
+
+    }
+
+
+    .verify-section{
+
+        padding:22px;
+
+    }
+
+}
